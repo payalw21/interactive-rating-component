@@ -26,23 +26,28 @@ body {
   width: 417px;
   height: 415px;
   border-radius: 20px;
-  display: flex;
+  display: none;
   flex-direction: column;
   flex-wrap: wrap;
   align-items: flex-start;
   justify-content: center;
   padding: 30px;
-  gap: 25px;
+  gap: 30px;
 }
 
-/* .container {
-  background-color: hsl(213, 19%, 18%);
-} */
+.thankYou-component {
+  width: 450px;
+  height: 450px;
+}
 
 .image-container {
   background-color: hsl(213deg 7.92% 30.35%);
-  padding: 15px;
   border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .heading {
@@ -53,15 +58,19 @@ body {
 .para {
   color: hsl(217, 12%, 63%);
   font-size: 0.8rem;
-  padding-top: 12px;
+  margin-top: 12px;
 }
 
 .button {
   background-color: hsl(213deg 22.17% 29.39%);
-  color: hsl(216, 12%, 54%);
+  color: hsl(216deg 12.19% 73.64%);
   border-radius: 50%;
   border-style: none;
-  padding: 15px;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .button:hover {
@@ -69,7 +78,7 @@ body {
   color: white;
 }
 
-.button:active {
+.button:focus {
   background-color: hsl(25, 97%, 53%);
   color: white;
   cursor: pointer;
@@ -78,7 +87,7 @@ body {
 .button-container {
   display: flex;
   flex-direction: row;
-  gap: 15px;
+  gap: 20px;
 }
 
 .submit-button {
@@ -86,12 +95,13 @@ body {
   color: white;
   font-size: 0.8rem;
   border-radius: 40px;
-  width: 100%;
-  /* display: flex;
-  justify-content: center; */
-  padding: 10px;
-  font-weight: 700px;
+  width: 330px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-style: none;
+  margin-top: 5px;
 }
 
 .submit-button:hover {
@@ -104,22 +114,16 @@ body {
   background-color: hsl(213deg 22.17% 29.39%);
   color: hsl(25, 97%, 53%);
   border-radius: 40px;
-  padding: 8px;
   font-size: 0.8rem;
+  height: 38px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.thankYou-component {
-  background-color: hsl(213, 19%, 18%);
-  width: 417px;
-  height: 415px;
-  border-radius: 20px;
+.show {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
-  padding: 30px;
-  gap: 25px;
 }
 
 @media screen and (max-width: 480px) {
@@ -134,15 +138,18 @@ body {
     width: 320px;
     height: 450px;
   }
+
+  .button {
+    width: 40px;
+    height: 40px;
+  }
+
+  .button-container {
+    gap: 15px;
+  }
+
+  .submit-button {
+    width: 260px;
+    height: 40px;
+  }
 }
-
-/* @media screen and (max-width: 330px) {
-  html {
-    font-size: 15px;
-  }
-
-  .component {
-    width: 200px;
-    height: 430px;
-  }
-} */
